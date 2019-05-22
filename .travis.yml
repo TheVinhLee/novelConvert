@@ -1,0 +1,4 @@
+languague: csharp
+solution: travis_test
+mono:
+        - latest
