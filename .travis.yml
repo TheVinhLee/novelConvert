@@ -1,4 +1,4 @@
-languague: csharp
-solution: travis_test
+language: csharp
+solution: travis_test.sln
 mono:
-        - latest
+        -latest
