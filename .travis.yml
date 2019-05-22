@@ -1,4 +1,6 @@
 language: csharp
 solution: travis_test.sln
 mono:
-        -latest
+        - latest
+        - 3.12.0
+        - 3.10.0
