@@ -1,6 +1,10 @@
-language: csharp
+languague: csharp
 solution: travis_test.sln
 mono:
         - latest
         - 3.12.0
         - 3.10.0
+install:
+        - nuget restore travis_test.sln
+script:
+        - msbuild /p:Configuration=Release travis_test.sln
