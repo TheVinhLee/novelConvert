@@ -1,5 +1,9 @@
 language: csharp
+solution: ./travis_test/travis_test.sln
+
 install:
-- dotnet restore
+  - sudo apt-get install nunit-console
+  - nuget restore ./travis_test/travis_test.sln
+
 script:
-- dotnet build
+  - xbuild ./travis_test/travis_test.sln
