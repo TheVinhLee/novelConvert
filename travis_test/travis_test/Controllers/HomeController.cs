@@ -7,6 +7,7 @@ namespace travis_test.Controllers
     {
         public ActionResult Index()
         {
+		int a = 10;
             return View();
         }
     }
