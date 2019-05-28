@@ -1,9 +1,8 @@
 language: csharp
 solution: ./travis_test/travis_test.sln
-
+mono: latest
 install:
-  - sudo apt-get install nunit-console
-  - nuget restore ./travis_test/travis_test.sln
-
+    - nuget restore ./travis_test/travis_test.sln
+    - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - xbuild ./travis_test/travis_test.sln
+    - msbuild /p:Configuration=Release ./travis_test/travis_test.sln
