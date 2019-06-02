@@ -1,6 +1,6 @@
 language: csharp
 mono: none
 dotnet: 2.1.202
-
+solution: ./core21/core21.sln
 script:
  - dotnet build
