@@ -1,6 +1,9 @@
+dist: trusty
 language: csharp
 mono: none
 dotnet: 2.1.202
-
+solution: core21.sln
 script:
- - dotnet build
+  - cd core21
+  - dotnet restore
+  - dotnet build
