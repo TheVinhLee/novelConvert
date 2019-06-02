@@ -1,0 +1,89 @@
+﻿@model IEnumerable<core21.Models.NovelModel>
+
+@{
+    ViewBag.Title = "MyNovel";
+}
+    
+
+<div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Link)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Author)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Chap_number)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Viewer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Voting)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Recommandation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Image_link)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Owner)
+                </th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Link)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Chap_number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Viewer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Voting)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Recommandation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Image_link)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner)
+                </td>
+                <td class="text-center">
+                    <a class='btn btn-info btn-xs' href="#">
+                        @Html.ActionLink("Detail", "../Novel/Detail/", new { id = item.Id }, htmlAttributes: new { @class = "glyphicon glyphicon-edit", @type = "span" })
+                    </a>
+                    <a href="#" class="btn btn-danger btn-xs">
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id }, htmlAttributes: new { @class = "glyphicon glyphicon-remove", @type = "span" })
+                    </a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

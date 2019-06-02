@@ -10,28 +10,32 @@ namespace core21.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int id = 0)
         {
-            return View();
+            DBModel db = new DBModel();
+
+            List<NovelModel> nv = db.TenNovel();
+
+            return View(nv);
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }
 
-        public IActionResult Error()
+        public IActionResult Register()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }

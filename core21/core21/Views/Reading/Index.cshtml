@@ -1,0 +1,52 @@
+﻿@model core21.Models.NovelModel
+@{
+    ViewBag.Title = "Reading";
+}
+
+<h2>Reading page @Model.Name</h2>
+<h2>Chapter: @ViewBag.Chapter</h2>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="page-item"><a href="/Reading/?id=@Model.Id&chapter=@ViewBag.Previous">Previous</a></li>
+        <li class="page-item"><a href="/Reading/?id=@Model.Id&chapter=@ViewBag.NextChapter">Next</a></li>
+    </ul>
+</nav>
+
+
+
+<div class="reading-body">
+    @using (System.IO.StreamReader sr = new System.IO.StreamReader("./database/novel_book/" + Model.Link))
+    {
+        string line = sr.ReadLine(); //first is a chapter
+        if (!sr.EndOfStream)
+        {
+            string chapter = "Chapter " + ViewBag.Chapter;
+            while (line.ToLower() != chapter.ToLower())
+            {
+                line = sr.ReadLine();
+            }
+            if (line.ToLower() == chapter.ToLower())
+            {
+                do
+                {
+                    if (sr.EndOfStream) { break; }
+                    line = sr.ReadLine();
+                    <p>@line</p>
+                    
+                }
+                while (line.Split(' ')[0] != "Chapter" || sr.EndOfStream); //read next chapter
+            }
+            
+        }
+    }
+</div>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="page-item"><a href="/Reading/?id=@Model.Id&chapter=@ViewBag.Previous">Previous</a></li>
+        <li class="page-item"><a href="/Reading/?id=@Model.Id&chapter=@ViewBag.NextChapter">Next</a></li>
+        <br></br>
+        <br></br>
+        <li class="page-item"><a href="/Reading/Voting/?id=@Model.Id&chapter=@ViewBag.Chapter">Rate</a></li>
+    </ul>
+</nav>
+

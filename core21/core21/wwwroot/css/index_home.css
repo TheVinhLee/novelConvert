@@ -1,0 +1,183 @@
+﻿body{
+    background-image: url("https://images.unsplash.com/photo-1527064563585-6c7b2c1c3690?ixlib=rb-1.2.1&w=1000&q=80");
+    background-repeat: no-repeat,repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+
+.near_head{
+    background-color:#fff;
+    margin-top:100px;
+    margin-left:20px;
+    margin-right:20px;
+    min-height:2000px;
+    max-height:3000px;
+    padding:1%;
+}
+
+.container{
+    max-width: 1600px;
+}
+
+.navbar-inverse{
+    background-color:#ff920b;
+    box-shadow: 0px 2px 15px 0px #8c6029;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fbfafa;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fffefe;
+}
+
+.recommand-comic{
+    float:left;
+    width:33%;
+    height:600px;
+    background-color:#fff;
+    margin-right:1%;
+    box-shadow: 4px 3px 8px 0px #efefef;
+
+    background-image:url("http://4.bp.blogspot.com/-s0A9_RuxvG4/U01dRqUHSmI/AAAAAAAAARU/Nfw9k8mE6uY/s1600/bat+quai+la+gi.png");
+    background-repeat: no-repeat,repeat;
+    background-position:center;
+    background-size:20%;
+    padding:1%;
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.recommand-comic h3{
+    color:#ff920b;
+    text-align:left;
+}
+
+.recommand-comic .recommand-novel-detail{
+    width:70%;
+    height:70%;
+    margin-left:15%;
+    margin-bottom:5%;
+
+    margin-top:20px;
+    background-image:url("https://i.pinimg.com/236x/88/d4/a4/88d4a401fc74760b1071db23e3c77b12--background-pictures.jpg");
+    background-repeat: no-repeat,repeat;
+    background-position:top;
+}
+
+.new-chapter{
+    float:left;
+    width:34%;
+    height:600px;
+    background-color:#fff;
+    border-right: 1px solid #e0deda;
+}
+
+.new-chapter-board{
+    padding:3px;
+    float: left;
+    width: 47%;
+    height: 32%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.new-chapter-board h3{
+    color:#ff920b;
+    text-align:left;
+}
+
+.new-chapter-board h3 a{
+    text-decoration:none;
+    color: #ff920b;
+}
+
+.new-chapter-board p{
+    color:#b1a895;
+    font-style:italic;
+}
+
+.top-novel{
+    float:left;
+    width:32%;
+    height:600px;
+    background-color:#fff;
+    padding:1%;
+}
+
+.top-novel h3{
+    color:#ff920b;
+    text-align:left;
+}
+
+.table{
+    height:90%;
+}
+
+.table span{
+     float:right;
+}
+
+.novel-reading{
+    width: 33%;
+    min-height:200px;
+    max-height: 600px;
+    padding-left:30px;
+
+}
+
+.novel-reading h3{
+    color:#ff920b;
+    text-align:left;
+}
+
+.novel-reading h3 span{
+    float:right;
+    color:#808080;
+    text-align:left;
+    font-size:20px;
+    font-style:italic;
+}
+
+.novel-reading h3 span a{
+    text-decoration:none;
+}
+
+.img-rounded{
+    width:75%;
+    height: 80px;
+}
+
+.img-novel-reading{
+    width: 50%;
+    height: 30px;
+}
+
+.novel-reading table tr td{
+    width:10%;
+}
+
+.new-novel{
+    float:right;
+    width:64%;
+    padding-right:1%;
+    margin-top:3%;
+}
+
+.new-novel table tr td{
+    width:10%;
+    text-align:center;
+}
+
+.new-novel table tr th{
+    text-align:center;
+}
+
+.new-novel h3{
+    color: #ff920b;
+
+}

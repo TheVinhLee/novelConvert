@@ -1,19 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="2.0.4" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="System.Management" Version="4.5.0" />
+    <PackageReference Include="System.Security.Permissions" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySqlData">
+      <HintPath>.\bin\references\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlEF6">
+      <HintPath>.\bin\references\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlWeb">
+      <HintPath>.\bin\references\MySql.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

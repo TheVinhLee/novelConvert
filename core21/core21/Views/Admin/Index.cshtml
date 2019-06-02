@@ -1,0 +1,93 @@
+﻿@model IEnumerable<core21.Models.UserModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fID)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fUsername)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fPassword)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fDate_of_birth)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fImage_profile)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fCoin)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fLevel)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fExperience)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fType)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fPower)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.fNick_name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">
+                    @Html.DisplayFor(modelItem => item.fID)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fUsername)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fPassword)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fDate_of_birth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fImage_profile)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fCoin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fExperience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fPower)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fNick_name)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.fID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.fID, value = ViewBag.id })
+                </td>
+            </tr>
+        }
+
+</table>

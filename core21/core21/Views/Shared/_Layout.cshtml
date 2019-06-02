@@ -8,6 +8,13 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/index_home.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
+        <link rel="stylesheet" href="~/css/demo.css" />
+        <link rel="stylesheet" href="~/css/animate-custom.css" />
+        <link rel="stylesheet" href="~/css/userProfile.css" />
+        <link rel="stylesheet" href="~/css/MyNovelList.css" />
+        <link rel="stylesheet" href="~/css/NovelUpload.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,31 +24,26 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:40px;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">core21</a>
+                @Html.ActionLink("Neat Novels", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
+    </div>
+    <div class="container body-content" style="width:90%">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - core21</p>
+        <footer style="margin-top:50%">
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application - Team 1 s6</p>
         </footer>
     </div>
 
@@ -64,8 +66,11 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/respond.js" asp-append-version="true"></script>
+        <script src="~/js/angularjs.js" asp-append-version="true"></script>
+        <script src="~/js/userProfile.js" asp-append-version="true"></script>
+        <script src="~/js/NovelUpload.js" asp-append-version="true"></script>
     </environment>
-
     @RenderSection("Scripts", required: false)
 </body>
 </html>

@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lythe\\Documents\\GitHub\\novelConvert\\core21\\core21\\core21.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lythe\\Documents\\GitHub\\novelConvert\\core21\\core21\\core21.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lythe\\Documents\\GitHub\\novelConvert\\core21\\core21\\core21.csproj",
+        "projectName": "core21",
+        "projectPath": "C:\\Users\\lythe\\Documents\\GitHub\\novelConvert\\core21\\core21\\core21.csproj",
+        "packagesPath": "C:\\Users\\lythe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lythe\\Documents\\GitHub\\novelConvert\\core21\\core21\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lythe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.BrowserLink": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

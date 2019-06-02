@@ -1,0 +1,102 @@
+﻿@model core21.Models.NovelModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+
+    <h4>NovelModel</h4>
+
+    <img src="~/database/Image/@Model.Image_link" alt="Alternate Text" />
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chap_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chap_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Viewer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Viewer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Voting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Voting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recommandation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recommandation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image_link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image_link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owner)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

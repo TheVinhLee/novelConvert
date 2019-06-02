@@ -1,0 +1,12 @@
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\bin\Debug\netcoreapp2.1\core21.dll.config
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\bin\Debug\netcoreapp2.1\core21.deps.json
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\bin\Debug\netcoreapp2.1\core21.runtimeconfig.json
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\bin\Debug\netcoreapp2.1\core21.runtimeconfig.dev.json
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\bin\Debug\netcoreapp2.1\core21.dll
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\bin\Debug\netcoreapp2.1\core21.pdb
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\obj\Debug\netcoreapp2.1\core21.csprojAssemblyReference.cache
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\obj\Debug\netcoreapp2.1\core21.csproj.CoreCompileInputs.cache
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\obj\Debug\netcoreapp2.1\core21.AssemblyInfoInputs.cache
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\obj\Debug\netcoreapp2.1\core21.AssemblyInfo.cs
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\obj\Debug\netcoreapp2.1\core21.dll
+C:\Users\lythe\Documents\GitHub\novelConvert\core21\core21\obj\Debug\netcoreapp2.1\core21.pdb

@@ -1,0 +1,95 @@
+﻿@model core21.Models.NovelModel
+
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h2>Upload</h2>
+
+
+@using (Html.BeginForm("Upload", "Novel", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <form role="form">
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control input-lg", @placeholder = "Novel Name", tabindex = "1" } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group" style="float:right">
+                                @Html.EditorFor(model => model.Author, new { htmlAttributes = new { @class = "form-control input-lg", @placeholder = "Author Name", tabindex = "2" } })
+                                @Html.ValidationMessageFor(model => model.Author, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="file-upload">
+                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Novel File</button>
+
+                <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" />
+                    <div class="drag-text">
+                        <h3>Drag and drop a file</h3>
+                    </div>
+                </div>
+                <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">
+                            Remove
+                            <span class="image-title">Uploaded File</span>
+                        </button>
+                    </div>
+                    @Html.EditorFor(model => model.Link, new { htmlAttributes = new { @class = "image-title", @hidden=true} })
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+                        <!-- image-preview-filename input [CUT FROM HERE]-->
+                        <div class="input-group image-preview">
+                            <div>Add cover Image</div>
+
+                            @Html.EditorFor(model => model.Image_link, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control image-preview-filename" } })
+                            <span class="input-group-btn">
+                                <!-- image-preview-clear button -->
+                                <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                                    <span class="glyphicon glyphicon-remove"></span> Clear
+                                </button>
+                                <!-- image-preview-input -->
+                                <div class="btn btn-default image-preview-input">
+                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                    <span class="image-preview-input-title">Browse</span>
+                                    <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" /> <!-- rename it -->
+                                </div>
+                            </span>
+                        </div><!-- /input-group image-preview [TO HERE]-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" >
+                <input type="submit" value="Submit" class="btn btn-default" style="margin-top: 49px;margin-right: 20%;"/>
+            </div>
+        </div>
+    </div>
+}

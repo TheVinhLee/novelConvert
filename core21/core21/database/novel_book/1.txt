@@ -1,0 +1,35 @@
+Chapter 1
+1) EWB is a global movement and there are many EWB organisations around the world. They are
+differently but they are connecting. They have the same goal which is to fix problems of the poor
+countries without expensive technologies. 1
+2) EWB Challenge is program which is designed for first year university student. It provides a chance
+for students to learn about design, communication and teamwork in real projects which come from
+the problems in some poor countries such as India, Nepal, Cambodia, rural Australia, Vietnam, Timor
+Leste and so on. 2
+3) In this year, EWB challenge looks at the problems in east coast of the island Espiritu Santo and ten
+communities working with live &amp; Learn Vanuatu. In these ten design areas, our team deals with the
+first area which is about water supply and choose the design project 1.3 – purification of water from
+open sources. By EWB Challenge information, we found that there are four water sources for the
+people in that island such as rainwater, seawater, spring and river. Our research aims to fix the
+problems that comes from these resources like salt, heavy metals, and so on by using a system
+which should be basic, cheap and effective.
+Chapter 2
+Performance: This SSF design has 3-4 layer, 1: dirty water, 2: clean sand, 3: gravel, 4: result.
+This system removes almost the bad element inside the water, however, it still need to boil
+and remove salt. It lets water fill through 2 layer (sand and gravel) and the elements inside
+water will be removed by these 2 layer. This system was used up to 150 years (Blackburn
+2005). (How is the design to function? What need is it filling? What does it have to do? Is it
+reliable?)
+2. Serviceability: By only using the sand and gravel, it is very easy for maintenance or repair. (Is
+maintenance or repair a concern? If so, can it be easily performed?)
+3. Economic: East Santo is an island, so the materials which are used for the SSF such as sand
+and gravel are free. The situation here is just how to move them. (Is the production and/or
+use costs considered?)
+4. Environmental: because it only uses sand and gravel as the main material, so it does not
+have any bad impact to environment. (Does this have positive or negative impact to the
+environment? Are there any environmental effects due to the production, use or end-of-use
+of the design? Are appropriate materials selected?)
+5. Health and safety: It can extrude “83+% total heterotrophic bacterial populations, 100% of
+Giardia cysts, 99.98% of Cryptosporidium oocysts, and 50–90% of organic and inorganic
+toxicants when administered in concentrations varying from 10– )100= environmental
+pollution levels”.(Palmateer 1999). (Have appropriate codes and standards been applied to

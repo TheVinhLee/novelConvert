@@ -1,0 +1,48 @@
+﻿@model core21.Models.UserModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="row user-menu-container square">
+        <div class="col-md-7 user-details">
+            <div class="row coralbg white">
+                <div class="col-md-6 no-pad">
+                    <div class="user-pad">
+                        <h3>Welcome back, @Model.fUsername</h3>
+                        @Html.ActionLink("Update", "Edit","", htmlAttributes: new { @class = "btn btn-labeled btn-info UserEdit" })
+                    </div>
+                </div>
+                <div class="col-md-6 no-pad">
+                    <div class="user-image">
+                        <img src="~/database/Image/@Model.fImage_profile" class="img-responsive thumbnail">
+                    </div>
+                </div>
+            </div>
+            <div class="row overview">
+                <div class="col-md-4 user-pad text-center">
+                    <h3>Viewing</h3>
+                    <h4>0</h4>
+                </div>
+                <div class="col-md-4 user-pad text-center">
+                    <h3>Novels uploaded</h3>
+                    <h4>0</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 user-menu-btns">
+            <div class="btn-group-vertical square" id="responsive">
+                <a href="#" class="btn btn-default">
+                    @Html.ActionLink("My Novels", "/MyNovel/", null, htmlAttributes: new { @class = "fa fa-laptop fa-3x" })
+                </a>
+            </div>
+            <div class="btn-group-vertical square" id="responsive">
+                <a href="#" class="btn btn-default">
+                    @Html.ActionLink("Upload New Novel", "../Novel/Upload/", null, htmlAttributes: new { @class = "fa fa-laptop fa-3x" })
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    

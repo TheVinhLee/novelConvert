@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@if (Context.Request.Cookies["user"] != null)
+{
+    using (Html.BeginForm("LogOff", "User", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hello " + Context.Request.Cookies["user"] + "!", "Index", "User", routeValues: null, htmlAttributes: new { title = "Detail" })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Log In/Register", "Login", "User", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
