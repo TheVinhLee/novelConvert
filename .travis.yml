@@ -1,7 +1,7 @@
 dist: trusty
 language: csharp
 mono: none
-dotnet: 2.1.202
+dotnet: 2.2.203
 solution: core21.sln
 script:
   - cd core21
