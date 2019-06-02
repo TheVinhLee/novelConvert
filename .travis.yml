@@ -6,3 +6,4 @@ solution: core21.sln
 script:
  - cd core21
  - dotnet restore
+ - dotnet build
